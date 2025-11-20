@@ -1,0 +1,12 @@
+{
+  "extends": "@tanstack/start/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["app/*"]
+    },
+    "types": ["@tanstack/start/env"]
+  },
+  "include": ["app", "tanstack.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
